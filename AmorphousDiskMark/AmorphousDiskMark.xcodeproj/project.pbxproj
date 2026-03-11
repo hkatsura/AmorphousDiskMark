@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C419065234914A700142C69 /* DMMediaIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C419064234914A700142C69 /* DMMediaIcon.m */; };
+		2C4418BF1DA88F5900767E74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4418BE1DA88F5900767E74 /* AppDelegate.m */; };
+		2C4418C21DA88F5900767E74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4418C11DA88F5900767E74 /* main.m */; };
+		2C4418C41DA88F5900767E74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4418C31DA88F5900767E74 /* Assets.xcassets */; };
+		2C4418C71DA88F5900767E74 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4418C51DA88F5900767E74 /* MainMenu.xib */; };
+		2C4418D21DA88F5900767E74 /* AmorphousDiskMarkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4418D11DA88F5900767E74 /* AmorphousDiskMarkTests.m */; };
+		2C4418DD1DA88F5900767E74 /* AmorphousDiskMarkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4418DC1DA88F5900767E74 /* AmorphousDiskMarkUITests.m */; };
+		2C4418F01DA9CF9200767E74 /* DiskUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4418EF1DA9CF9200767E74 /* DiskUtil.m */; };
+		2C4418F51DAAE9ED00767E74 /* DiskMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4418F41DAAE9ED00767E74 /* DiskMark.m */; };
+		2C4418FB1DAC811000767E74 /* DMButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4418FA1DAC811000767E74 /* DMButton.m */; };
+		2C7605971DACA0DD00130FF7 /* DMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7605961DACA0DD00130FF7 /* DMTextView.m */; };
+		2C76059A1DAD2B9500130FF7 /* DMButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7605991DAD2B9500130FF7 /* DMButtonCell.m */; };
+		2C76059C1DAD3EFC00130FF7 /* cdm-60x48.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C76059B1DAD3EFC00130FF7 /* cdm-60x48.png */; };
+		2C76059E1DADC7B300130FF7 /* cdm-16x48-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C76059D1DADC7B300130FF7 /* cdm-16x48-bar.png */; };
+		2C7605B41DB439EF00130FF7 /* LinkTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7605B31DB439EF00130FF7 /* LinkTextField.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C4418CE1DA88F5900767E74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C4418B21DA88F5900767E74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C4418B91DA88F5900767E74;
+			remoteInfo = AmorphousDiskMark;
+		};
+		2C4418D91DA88F5900767E74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C4418B21DA88F5900767E74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C4418B91DA88F5900767E74;
+			remoteInfo = AmorphousDiskMark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C044733217FE42900DEDD59 /* AmorphousDiskMark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AmorphousDiskMark.entitlements; sourceTree = "<group>"; };
+		2C419063234914A700142C69 /* DMMediaIcon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMMediaIcon.h; sourceTree = "<group>"; };
+		2C419064234914A700142C69 /* DMMediaIcon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMMediaIcon.m; sourceTree = "<group>"; };
+		2C4418BA1DA88F5900767E74 /* AmorphousDiskMark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmorphousDiskMark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4418BD1DA88F5900767E74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C4418BE1DA88F5900767E74 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C4418C11DA88F5900767E74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C4418C31DA88F5900767E74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C4418C81DA88F5900767E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C4418CD1DA88F5900767E74 /* AmorphousDiskMarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmorphousDiskMarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4418D11DA88F5900767E74 /* AmorphousDiskMarkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmorphousDiskMarkTests.m; sourceTree = "<group>"; };
+		2C4418D31DA88F5900767E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C4418D81DA88F5900767E74 /* AmorphousDiskMarkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmorphousDiskMarkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4418DC1DA88F5900767E74 /* AmorphousDiskMarkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmorphousDiskMarkUITests.m; sourceTree = "<group>"; };
+		2C4418DE1DA88F5900767E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C4418EE1DA9CF9200767E74 /* DiskUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiskUtil.h; sourceTree = "<group>"; };
+		2C4418EF1DA9CF9200767E74 /* DiskUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiskUtil.m; sourceTree = "<group>"; };
+		2C4418F31DAAE9ED00767E74 /* DiskMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiskMark.h; sourceTree = "<group>"; };
+		2C4418F41DAAE9ED00767E74 /* DiskMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiskMark.m; sourceTree = "<group>"; };
+		2C4418F91DAC811000767E74 /* DMButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMButton.h; sourceTree = "<group>"; };
+		2C4418FA1DAC811000767E74 /* DMButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMButton.m; sourceTree = "<group>"; };
+		2C7605951DACA0DD00130FF7 /* DMTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTextView.h; sourceTree = "<group>"; };
+		2C7605961DACA0DD00130FF7 /* DMTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMTextView.m; sourceTree = "<group>"; };
+		2C7605981DAD2B9500130FF7 /* DMButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMButtonCell.h; sourceTree = "<group>"; };
+		2C7605991DAD2B9500130FF7 /* DMButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMButtonCell.m; sourceTree = "<group>"; };
+		2C76059B1DAD3EFC00130FF7 /* cdm-60x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cdm-60x48.png"; path = "img/cdm-60x48.png"; sourceTree = "<group>"; };
+		2C76059D1DADC7B300130FF7 /* cdm-16x48-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cdm-16x48-bar.png"; path = "img/cdm-16x48-bar.png"; sourceTree = "<group>"; };
+		2C7605B21DB439EF00130FF7 /* LinkTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkTextField.h; sourceTree = "<group>"; };
+		2C7605B31DB439EF00130FF7 /* LinkTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkTextField.m; sourceTree = "<group>"; };
+		2C7605B51DB85BDF00130FF7 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		2CE6BEA523D3D7F200A57E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C4418B71DA88F5900767E74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4418CA1DA88F5900767E74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4418D51DA88F5900767E74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C4418B11DA88F5900767E74 = {
+			isa = PBXGroup;
+			children = (
+				2C4418BC1DA88F5900767E74 /* AmorphousDiskMark */,
+				2C4418D01DA88F5900767E74 /* AmorphousDiskMarkTests */,
+				2C4418DB1DA88F5900767E74 /* AmorphousDiskMarkUITests */,
+				2C4418BB1DA88F5900767E74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C4418BB1DA88F5900767E74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C4418BA1DA88F5900767E74 /* AmorphousDiskMark.app */,
+				2C4418CD1DA88F5900767E74 /* AmorphousDiskMarkTests.xctest */,
+				2C4418D81DA88F5900767E74 /* AmorphousDiskMarkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C4418BC1DA88F5900767E74 /* AmorphousDiskMark */ = {
+			isa = PBXGroup;
+			children = (
+				2C044733217FE42900DEDD59 /* AmorphousDiskMark.entitlements */,
+				2C7605B51DB85BDF00130FF7 /* Common.h */,
+				2C4418BD1DA88F5900767E74 /* AppDelegate.h */,
+				2C4418BE1DA88F5900767E74 /* AppDelegate.m */,
+				2C4418EE1DA9CF9200767E74 /* DiskUtil.h */,
+				2C4418EF1DA9CF9200767E74 /* DiskUtil.m */,
+				2C4418F31DAAE9ED00767E74 /* DiskMark.h */,
+				2C4418F41DAAE9ED00767E74 /* DiskMark.m */,
+				2C7605951DACA0DD00130FF7 /* DMTextView.h */,
+				2C7605961DACA0DD00130FF7 /* DMTextView.m */,
+				2C7605981DAD2B9500130FF7 /* DMButtonCell.h */,
+				2C7605991DAD2B9500130FF7 /* DMButtonCell.m */,
+				2C4418F91DAC811000767E74 /* DMButton.h */,
+				2C4418FA1DAC811000767E74 /* DMButton.m */,
+				2C7605B21DB439EF00130FF7 /* LinkTextField.h */,
+				2C7605B31DB439EF00130FF7 /* LinkTextField.m */,
+				2C419063234914A700142C69 /* DMMediaIcon.h */,
+				2C419064234914A700142C69 /* DMMediaIcon.m */,
+				2C4418C31DA88F5900767E74 /* Assets.xcassets */,
+				2C4418C81DA88F5900767E74 /* Info.plist */,
+				2C4418FC1DAC86B500767E74 /* img */,
+				2C4418F21DAAE81400767E74 /* English */,
+				2C4418C01DA88F5900767E74 /* Supporting Files */,
+			);
+			path = AmorphousDiskMark;
+			sourceTree = "<group>";
+		};
+		2C4418C01DA88F5900767E74 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C4418C11DA88F5900767E74 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C4418D01DA88F5900767E74 /* AmorphousDiskMarkTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C4418D11DA88F5900767E74 /* AmorphousDiskMarkTests.m */,
+				2C4418D31DA88F5900767E74 /* Info.plist */,
+			);
+			path = AmorphousDiskMarkTests;
+			sourceTree = "<group>";
+		};
+		2C4418DB1DA88F5900767E74 /* AmorphousDiskMarkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C4418DC1DA88F5900767E74 /* AmorphousDiskMarkUITests.m */,
+				2C4418DE1DA88F5900767E74 /* Info.plist */,
+			);
+			path = AmorphousDiskMarkUITests;
+			sourceTree = "<group>";
+		};
+		2C4418F21DAAE81400767E74 /* English */ = {
+			isa = PBXGroup;
+			children = (
+				2C4418C51DA88F5900767E74 /* MainMenu.xib */,
+			);
+			name = English;
+			sourceTree = "<group>";
+		};
+		2C4418FC1DAC86B500767E74 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				2C76059D1DADC7B300130FF7 /* cdm-16x48-bar.png */,
+				2C76059B1DAD3EFC00130FF7 /* cdm-60x48.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C4418B91DA88F5900767E74 /* AmorphousDiskMark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4418E11DA88F5900767E74 /* Build configuration list for PBXNativeTarget "AmorphousDiskMark" */;
+			buildPhases = (
+				2C4418B61DA88F5900767E74 /* Sources */,
+				2C4418B71DA88F5900767E74 /* Frameworks */,
+				2C4418B81DA88F5900767E74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmorphousDiskMark;
+			productName = AmorphousDiskMark;
+			productReference = 2C4418BA1DA88F5900767E74 /* AmorphousDiskMark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C4418CC1DA88F5900767E74 /* AmorphousDiskMarkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4418E41DA88F5900767E74 /* Build configuration list for PBXNativeTarget "AmorphousDiskMarkTests" */;
+			buildPhases = (
+				2C4418C91DA88F5900767E74 /* Sources */,
+				2C4418CA1DA88F5900767E74 /* Frameworks */,
+				2C4418CB1DA88F5900767E74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C4418CF1DA88F5900767E74 /* PBXTargetDependency */,
+			);
+			name = AmorphousDiskMarkTests;
+			productName = AmorphousDiskMarkTests;
+			productReference = 2C4418CD1DA88F5900767E74 /* AmorphousDiskMarkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C4418D71DA88F5900767E74 /* AmorphousDiskMarkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4418E71DA88F5900767E74 /* Build configuration list for PBXNativeTarget "AmorphousDiskMarkUITests" */;
+			buildPhases = (
+				2C4418D41DA88F5900767E74 /* Sources */,
+				2C4418D51DA88F5900767E74 /* Frameworks */,
+				2C4418D61DA88F5900767E74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C4418DA1DA88F5900767E74 /* PBXTargetDependency */,
+			);
+			name = AmorphousDiskMarkUITests;
+			productName = AmorphousDiskMarkUITests;
+			productReference = 2C4418D81DA88F5900767E74 /* AmorphousDiskMarkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C4418B21DA88F5900767E74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = "Katsura Shareware";
+				TargetAttributes = {
+					2C4418B91DA88F5900767E74 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4G5652JFRC;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					2C4418CC1DA88F5900767E74 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4G5652JFRC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2C4418B91DA88F5900767E74;
+					};
+					2C4418D71DA88F5900767E74 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4G5652JFRC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2C4418B91DA88F5900767E74;
+					};
+				};
+			};
+			buildConfigurationList = 2C4418B51DA88F5900767E74 /* Build configuration list for PBXProject "AmorphousDiskMark" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C4418B11DA88F5900767E74;
+			productRefGroup = 2C4418BB1DA88F5900767E74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C4418B91DA88F5900767E74 /* AmorphousDiskMark */,
+				2C4418CC1DA88F5900767E74 /* AmorphousDiskMarkTests */,
+				2C4418D71DA88F5900767E74 /* AmorphousDiskMarkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C4418B81DA88F5900767E74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4418C41DA88F5900767E74 /* Assets.xcassets in Resources */,
+				2C4418C71DA88F5900767E74 /* MainMenu.xib in Resources */,
+				2C76059E1DADC7B300130FF7 /* cdm-16x48-bar.png in Resources */,
+				2C76059C1DAD3EFC00130FF7 /* cdm-60x48.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4418CB1DA88F5900767E74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4418D61DA88F5900767E74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C4418B61DA88F5900767E74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C419065234914A700142C69 /* DMMediaIcon.m in Sources */,
+				2C7605971DACA0DD00130FF7 /* DMTextView.m in Sources */,
+				2C7605B41DB439EF00130FF7 /* LinkTextField.m in Sources */,
+				2C4418FB1DAC811000767E74 /* DMButton.m in Sources */,
+				2C4418C21DA88F5900767E74 /* main.m in Sources */,
+				2C4418BF1DA88F5900767E74 /* AppDelegate.m in Sources */,
+				2C4418F01DA9CF9200767E74 /* DiskUtil.m in Sources */,
+				2C76059A1DAD2B9500130FF7 /* DMButtonCell.m in Sources */,
+				2C4418F51DAAE9ED00767E74 /* DiskMark.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4418C91DA88F5900767E74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4418D21DA88F5900767E74 /* AmorphousDiskMarkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4418D41DA88F5900767E74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4418DD1DA88F5900767E74 /* AmorphousDiskMarkUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C4418CF1DA88F5900767E74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C4418B91DA88F5900767E74 /* AmorphousDiskMark */;
+			targetProxy = 2C4418CE1DA88F5900767E74 /* PBXContainerItemProxy */;
+		};
+		2C4418DA1DA88F5900767E74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C4418B91DA88F5900767E74 /* AmorphousDiskMark */;
+			targetProxy = 2C4418D91DA88F5900767E74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C4418C51DA88F5900767E74 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CE6BEA523D3D7F200A57E55 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C4418DF1DA88F5900767E74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-Wextra",
+					"-Wall",
+					"-W",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2C4418E01DA88F5900767E74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = (
+					"-Wextra",
+					"-Wall",
+					"-W",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2C4418E21DA88F5900767E74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AmorphousDiskMark/AmorphousDiskMark.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 43;
+				DEVELOPMENT_TEAM = 4G5652JFRC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = AmorphousDiskMark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 4.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.katsurashareware.AmorphousDiskMark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2C4418E31DA88F5900767E74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AmorphousDiskMark/AmorphousDiskMark.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 43;
+				DEVELOPMENT_TEAM = 4G5652JFRC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = AmorphousDiskMark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 4.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.katsurashareware.AmorphousDiskMark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2C4418E51DA88F5900767E74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4G5652JFRC;
+				INFOPLIST_FILE = AmorphousDiskMarkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.katsurashareware.AmorphousDiskMarkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmorphousDiskMark.app/Contents/MacOS/AmorphousDiskMark";
+			};
+			name = Debug;
+		};
+		2C4418E61DA88F5900767E74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4G5652JFRC;
+				INFOPLIST_FILE = AmorphousDiskMarkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.katsurashareware.AmorphousDiskMarkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmorphousDiskMark.app/Contents/MacOS/AmorphousDiskMark";
+			};
+			name = Release;
+		};
+		2C4418E81DA88F5900767E74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4G5652JFRC;
+				INFOPLIST_FILE = AmorphousDiskMarkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.katsurashareware.AmorphousDiskMarkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AmorphousDiskMark;
+			};
+			name = Debug;
+		};
+		2C4418E91DA88F5900767E74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4G5652JFRC;
+				INFOPLIST_FILE = AmorphousDiskMarkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.katsurashareware.AmorphousDiskMarkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AmorphousDiskMark;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C4418B51DA88F5900767E74 /* Build configuration list for PBXProject "AmorphousDiskMark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4418DF1DA88F5900767E74 /* Debug */,
+				2C4418E01DA88F5900767E74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C4418E11DA88F5900767E74 /* Build configuration list for PBXNativeTarget "AmorphousDiskMark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4418E21DA88F5900767E74 /* Debug */,
+				2C4418E31DA88F5900767E74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C4418E41DA88F5900767E74 /* Build configuration list for PBXNativeTarget "AmorphousDiskMarkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4418E51DA88F5900767E74 /* Debug */,
+				2C4418E61DA88F5900767E74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C4418E71DA88F5900767E74 /* Build configuration list for PBXNativeTarget "AmorphousDiskMarkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4418E81DA88F5900767E74 /* Debug */,
+				2C4418E91DA88F5900767E74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C4418B21DA88F5900767E74 /* Project object */;
+}
