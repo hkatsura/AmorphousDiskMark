@@ -79,7 +79,7 @@ jobs:
         run: |
           xcodebuild -exportArchive \
             -archivePath "$RUNNER_TEMP/App.xcarchive" \
-            -exportOptionsPlist ExportOptions.plist \
+            -exportOptionsPlist AmorphousDiskMark/ExportOptions.plist \
             -exportPath "$RUNNER_TEMP/export" \
             -authenticationKeyPath ~/.private_keys/AuthKey_${{ secrets.ASC_KEY_ID }}.p8 \
             -authenticationKeyID ${{ secrets.ASC_KEY_ID }} \
