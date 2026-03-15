@@ -2038,7 +2038,7 @@ enum
 {
     //
     // ---------------------------------------------------------------------
-    // AmorphousDiskMark 4.0.1 (C) 2016-2023 Katsura Shareware
+    // AmorphousDiskMark 4.0.2 (C) 2016-2026 Katsura Shareware
     //                     Katsura Shareware : https://katsurashareware.com/
     // ---------------------------------------------------------------------
     // * MB/s = 1,000,000 bytes/s [SATA/600 = 600,000,000 bytes/s]
