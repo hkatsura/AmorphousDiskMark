@@ -1237,7 +1237,7 @@
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="329" translatesAutoresizingMaskIntoConstraints="NO" id="QJD-h4-M1e">
                         <rect key="frame" x="18" y="42" width="333" height="28"/>
-                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Copyright © 2016-2023 Katsura Shareware All rights reserved." id="hQ4-ll-bNR">
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Copyright © 2016-2026 Katsura Shareware All rights reserved." id="hQ4-ll-bNR">
                             <font key="font" metaFont="smallSystem"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
