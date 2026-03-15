@@ -72,7 +72,10 @@ jobs:
             -scheme "$SCHEME" \
             -destination 'generic/platform=macOS' \
             -configuration Release \
-            -archivePath "$RUNNER_TEMP/App.xcarchive"
+            -archivePath "$RUNNER_TEMP/App.xcarchive" \
+            CODE_SIGN_IDENTITY="Apple Distribution" \
+            CODE_SIGN_STYLE=Manual \
+            PROVISIONING_PROFILE_SPECIFIER=""
 
       # --- Export and upload in one step ---
       - name: Export and upload to App Store Connect
