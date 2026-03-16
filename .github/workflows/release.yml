@@ -73,9 +73,8 @@ jobs:
             -destination 'generic/platform=macOS' \
             -configuration Release \
             -archivePath "$RUNNER_TEMP/App.xcarchive" \
-            -allowProvisioningUpdates \
-            CODE_SIGN_STYLE=Automatic \
-            DEVELOPMENT_TEAM="4G5652JFRC"
+            CODE_SIGN_STYLE=Manual \
+            CODE_SIGN_IDENTITY="Apple Distribution"
 
       # --- Export and upload in one step ---
       - name: Export and upload to App Store Connect
