@@ -11,7 +11,7 @@
 	<key>signingStyle</key>
 	<string>manual</string>
 	<key>installerSigningCertificate</key>
-	<string>Apple Distribution</string>
+	<string>3rd Party Mac Developer Installer</string>
 	<key>signingCertificate</key>
 	<string>Apple Distribution</string>
 	<key>provisioningProfiles</key>
