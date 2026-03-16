@@ -20,6 +20,7 @@ jobs:
       - name: Set version from tag
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
+          VERSION="${VERSION%-rc*}"
           echo "VERSION=$VERSION" >> "$GITHUB_ENV"
 
       - name: Stamp version into Info.plist
