@@ -70,6 +70,7 @@ jobs:
           xcodebuild archive \
             -project "$PROJECT" \
             -scheme "$SCHEME" \
+            -derivedDataPath "$RUNNER_TEMP/build_logs" \
             -destination 'generic/platform=macOS' \
             -configuration Release \
             -archivePath "$RUNNER_TEMP/App.xcarchive" \
@@ -83,6 +84,7 @@ jobs:
             -archivePath "$RUNNER_TEMP/App.xcarchive" \
             -exportOptionsPlist AmorphousDiskMark/ExportOptions.plist \
             -exportPath "$RUNNER_TEMP/export" \
+            -scheme "$SCHEME" \
             -derivedDataPath "$RUNNER_TEMP/build_logs" \
             -authenticationKeyPath ~/.private_keys/AuthKey_${{ secrets.ASC_KEY_ID }}.p8 \
             -authenticationKeyID ${{ secrets.ASC_KEY_ID }} \
