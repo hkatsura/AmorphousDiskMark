@@ -10,6 +10,8 @@
 	<string>4G5652JFRC</string>
 	<key>signingStyle</key>
 	<string>manual</string>
+	<key>installerSigningCertificate</key>
+	<string>Apple Distribution</string>
 	<key>signingCertificate</key>
 	<string>Apple Distribution</string>
 	<key>provisioningProfiles</key>
