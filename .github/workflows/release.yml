@@ -83,11 +83,11 @@ jobs:
             -archivePath "$RUNNER_TEMP/App.xcarchive" \
             -exportOptionsPlist AmorphousDiskMark/ExportOptions.plist \
             -exportPath "$RUNNER_TEMP/export" \
+            -derivedDataPath "$RUNNER_TEMP/build_logs" \
             -authenticationKeyPath ~/.private_keys/AuthKey_${{ secrets.ASC_KEY_ID }}.p8 \
             -authenticationKeyID ${{ secrets.ASC_KEY_ID }} \
             -authenticationKeyIssuerID ${{ secrets.ASC_ISSUER_ID }} \
-            -allowProvisioningUpdates \
-            -quiet
+            -allowProvisioningUpdates
 
       # --- Cleanup ---
       - name: Clean up keychain
