@@ -73,9 +73,10 @@ jobs:
             -destination 'generic/platform=macOS' \
             -configuration Release \
             -archivePath "$RUNNER_TEMP/App.xcarchive" \
-            CODE_SIGN_IDENTITY="Apple Distribution" \
-            CODE_SIGN_STYLE=Manual \
-            PROVISIONING_PROFILE_SPECIFIER=""
+            -authenticationKeyPath ~/.private_keys/AuthKey_${{ secrets.ASC_KEY_ID }}.p8 \
+            -authenticationKeyID ${{ secrets.ASC_KEY_ID }} \
+            -authenticationKeyIssuerID ${{ secrets.ASC_ISSUER_ID }} \
+            -allowProvisioningUpdates
 
       # --- Export and upload in one step ---
       - name: Export and upload to App Store Connect
