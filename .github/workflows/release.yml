@@ -31,11 +31,11 @@ jobs:
       # --- Signing ---
       - name: Install certificate and provisioning profile
         env:
-          CERTIFICATE_BASE64: ${{ secrets.CERTIFICATE_BASE64 }}
-          CERTIFICATE_PASSWORD: ${{ secrets.CERTIFICATE_PASSWORD }}
+          CERTIFICATE_BASE64: ${{ secrets.TWO_CERTS_BASE64 }}
+          CERTIFICATE_PASSWORD: ${{ secrets.TWO_CERTS_PASSWORD }}
           PROVISIONING_PROFILE_BASE64: ${{ secrets.PROVISIONING_PROFILE_BASE64 }}
         run: |
-          CERT_PATH="$RUNNER_TEMP/certificate.p12"
+          CERT_PATH="$RUNNER_TEMP/certs.p12"
           PP_PATH="$RUNNER_TEMP/profile.provisionprofile"
           KEYCHAIN_PATH="$RUNNER_TEMP/signing.keychain-db"
 
