@@ -73,7 +73,6 @@ jobs:
           xcodebuild archive \
             -project "$PROJECT" \
             -scheme "$SCHEME" \
-            -derivedDataPath "$RUNNER_TEMP/build_logs" \
             -destination 'generic/platform=macOS' \
             -configuration Release \
             -archivePath "$RUNNER_TEMP/App.xcarchive" \
