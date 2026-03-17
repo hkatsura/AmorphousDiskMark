@@ -14,7 +14,7 @@ jobs:
       PROJECT: AmorphousDiskMark/AmorphousDiskMark.xcodeproj
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       # --- Version from tag ---
       - name: Set version from tag
