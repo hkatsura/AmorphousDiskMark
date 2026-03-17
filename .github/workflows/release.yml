@@ -20,22 +20,24 @@ jobs:
       - name: Set version from tag
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
+          VERSION="${VERSION%-rc*}"
           echo "VERSION=$VERSION" >> "$GITHUB_ENV"
 
       - name: Stamp version into Info.plist
         run: |
           PLIST="AmorphousDiskMark/AmorphousDiskMark/Info.plist"
+          BUNDLE_VERSION=`expr $GITHUB_RUN_NUMBER + 27`
           /usr/libexec/PlistBuddy -c "Set :CFBundleShortVersionString $VERSION" "$PLIST"
-          /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $GITHUB_RUN_NUMBER" "$PLIST"
+          /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $BUNDLE_VERSION" "$PLIST"
 
       # --- Signing ---
       - name: Install certificate and provisioning profile
         env:
-          CERTIFICATE_BASE64: ${{ secrets.CERTIFICATE_BASE64 }}
-          CERTIFICATE_PASSWORD: ${{ secrets.CERTIFICATE_PASSWORD }}
+          CERTIFICATE_BASE64: ${{ secrets.TWO_CERTS_BASE64 }}
+          CERTIFICATE_PASSWORD: ${{ secrets.TWO_CERTS_PASSWORD }}
           PROVISIONING_PROFILE_BASE64: ${{ secrets.PROVISIONING_PROFILE_BASE64 }}
         run: |
-          CERT_PATH="$RUNNER_TEMP/certificate.p12"
+          CERT_PATH="$RUNNER_TEMP/certs.p12"
           PP_PATH="$RUNNER_TEMP/profile.provisionprofile"
           KEYCHAIN_PATH="$RUNNER_TEMP/signing.keychain-db"
 
@@ -50,6 +52,7 @@ jobs:
           security set-key-partition-list -S apple-tool:,apple: \
             -k "" "$KEYCHAIN_PATH"
           security list-keychains -d user -s "$KEYCHAIN_PATH"
+          security find-identity -v
 
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
           cp "$PP_PATH" ~/Library/MobileDevice/Provisioning\ Profiles/
@@ -73,9 +76,8 @@ jobs:
             -destination 'generic/platform=macOS' \
             -configuration Release \
             -archivePath "$RUNNER_TEMP/App.xcarchive" \
-            -allowProvisioningUpdates \
-            CODE_SIGN_STYLE=Automatic \
-            DEVELOPMENT_TEAM="4G5652JFRC"
+            CODE_SIGN_STYLE=Manual \
+            CODE_SIGN_IDENTITY="Apple Distribution"
 
       # --- Export and upload in one step ---
       - name: Export and upload to App Store Connect
