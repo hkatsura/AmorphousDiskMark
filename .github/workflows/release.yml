@@ -16,6 +16,9 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      - name: Select Xcode version 14.0.1
+        run: sudo xcode-select --switch /Applications/Xcode_14.0.1.app
+
       # --- Version from tag ---
       - name: Set version from tag
         run: |
