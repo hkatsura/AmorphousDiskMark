@@ -16,10 +16,10 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - name: Select Xcode version 16.4
+      - name: Select Xcode version 26.3
         run: |
           ls -ldT /Applications/Xcode*
-          sudo xcode-select --switch /Applications/Xcode_16.4.app
+          sudo xcode-select --switch /Applications/Xcode_26.3.app
 
       # --- Version from tag ---
       - name: Set version from tag
