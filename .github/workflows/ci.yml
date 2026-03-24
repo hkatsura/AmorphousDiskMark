@@ -11,7 +11,11 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
+
+      - name: Select Xcode version 26.3
+        run: |
+          sudo xcode-select --switch /Applications/Xcode_26.3.app
 
       - name: Build
         run: |
@@ -29,6 +33,6 @@ jobs:
             -project AmorphousDiskMark/AmorphousDiskMark.xcodeproj \
             -scheme AmorphousDiskMark \
             -destination 'platform=macOS' \
-            CODE_SIGN_IDENTITY="" \
+            CODE_SIGN_IDENTITY="-" \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGNING_ALLOWED=NO
