@@ -44,10 +44,11 @@
 
 + (NSString *)randomFilename
 {
-    // adm: AmorphousDiskMark
-    // pid: int (int32_t) process ID
-    // arc4random() produces a pseudo-random number in the range from 0 to (2**32)-1
-    return [NSString stringWithFormat:@".us.katsura.adm-%d-%08llx", [[NSProcessInfo processInfo] processIdentifier], (uint64_t)arc4random()];
+    // Combine two arc4random() calls for 64 bits of entropy instead of 32.
+    // This makes accidental collisions essentially impossible and hardens against
+    // any attempt to predict the filename in advance.
+    uint64_t r = ((uint64_t)arc4random() << 32) | (uint64_t)arc4random();
+    return [NSString stringWithFormat:@".us.katsura.adm-%d-%016llx", [[NSProcessInfo processInfo] processIdentifier], r];
 }
 
 // i probably should make sure the same file name doesn't already exist.
