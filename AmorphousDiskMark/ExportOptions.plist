@@ -25,5 +25,7 @@
 	<true/>
 	<key>uploadBitcode</key>
 	<false/>
+	<key>manageAppVersionAndBuildNumber</key>
+	<true/>
 </dict>
 </plist>
