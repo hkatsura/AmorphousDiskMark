@@ -31,9 +31,7 @@ jobs:
       - name: Stamp version into Info.plist
         run: |
           PLIST="AmorphousDiskMark/AmorphousDiskMark/Info.plist"
-          BUNDLE_VERSION=`expr $GITHUB_RUN_NUMBER + 27`
           /usr/libexec/PlistBuddy -c "Set :CFBundleShortVersionString $VERSION" "$PLIST"
-          /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $BUNDLE_VERSION" "$PLIST"
 
       # --- Signing ---
       - name: Install certificate and provisioning profile
