@@ -978,7 +978,7 @@ static void testThread(void *p)
         
         // open a file for writing
         KSLog(@"%s: creating a write test file %s...", __func__, path);
-        _fd = open(path, O_CREAT | O_RDWR, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+        _fd = open(path, O_CREAT | O_EXCL | O_RDWR, S_IRUSR | S_IWUSR);
         KSLog(@"%s: fd: %d", __func__, _fd);
 
         r = fcntl(_fd, F_PREALLOCATE, &fst); // enable PREALLOCATE
@@ -999,7 +999,7 @@ static void testThread(void *p)
         
         // open (create) a file for reading (write a file)
         KSLog(@"%s: creating a read test file %s...", __func__, path);
-        _fd = open(path, O_CREAT | O_RDWR, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+        _fd = open(path, O_CREAT | O_EXCL | O_RDWR, S_IRUSR | S_IWUSR);
         if (_fd < 0)
         {
             r = errno;
